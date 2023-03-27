@@ -15,11 +15,6 @@ code {
 }
 :root {
   --fontFamily: "Inter", sans-serif;
-  --chat-bg: #20212e;
-  --sender-msg-bg: linear-gradient(114.79deg, #c040fc -17.76%, #4b3cff 99.88%);
-  --reciver-msg-bg: #434151;
-  --secondary-bg: #30303e;
-  --text-color: #ecddff;
 }
 * {
   margin: 0;
