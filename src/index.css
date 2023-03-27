@@ -32,13 +32,3 @@ h5,
 p {
   margin: 0;
 }
-.container {
-  max-width: 1116px;
-  width: 95%;
-  margin: 0 auto;
-}
-@media only screen and (max-width: 380px) {
-  .container {
-    width: 98%;
-  }
-}
