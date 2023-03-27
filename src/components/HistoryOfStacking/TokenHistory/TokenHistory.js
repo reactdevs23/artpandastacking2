@@ -18,7 +18,7 @@ const TokenHistory = ({ history }) => {
         <p></p>
         <div className={styles.header}>
           <p className={styles.title}>Operation</p>{" "}
-          <p className={styles.title}>Time</p>{" "}
+          <p className={[styles.title, styles.time].join(" ")}>Time</p>{" "}
           <p className={styles.title}>Amount</p>
         </div>
       </div>
@@ -48,7 +48,9 @@ const TokenHistory = ({ history }) => {
             </div>
             <div className={styles.history}>
               <p className={styles.text}>{el.operation}</p>{" "}
-              <p className={styles.text}>{formatedDate(el.time)}</p>{" "}
+              <p className={[styles.text, styles.time].join(" ")}>
+                {formatedDate(el.time)}
+              </p>{" "}
               <p className={styles.text}>{el.amount.toLocaleString()} UNS</p>{" "}
             </div>
           </div>

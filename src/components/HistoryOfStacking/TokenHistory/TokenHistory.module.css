@@ -12,7 +12,7 @@
 .history {
   display: grid;
   grid-template-columns: 0.8fr 1fr auto;
-  gap: 12px;
+  gap: 8px;
   align-items: center;
   padding: 0 8px;
 }
@@ -71,6 +71,7 @@
   text-transform: capitalize;
   color: #1e1e1e;
 }
+
 .unstakeHistories .text {
   color: #d6edff;
 }
@@ -85,5 +86,25 @@
   }
   .lockIcon {
     width: 20px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .historyWrapper {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+  }
+  .lockBox {
+    max-width: 28px;
+    height: 28px;
+  }
+  .lockIcon {
+    width: 16px;
+  }
+  .historyWrapper {
+    padding: 6px 6px;
+  }
+  .header,
+  .history {
+    padding: 0 5px;
   }
 }
