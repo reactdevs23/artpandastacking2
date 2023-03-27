@@ -1,6 +1,6 @@
 import React from "react";
-import HistoryOfStacking from "../HistoryOfStacking/HistoryOfStacking";
-import Staking from "../Staking/Staking";
+import HistoryOfStacking from "../../components/HistoryOfStacking/HistoryOfStacking";
+import Staking from "../../components/Staking/Staking";
 import styles from "./styles.module.css";
 
 const Home = () => {
