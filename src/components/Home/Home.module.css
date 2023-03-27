@@ -1,4 +1,4 @@
-.container {
+.myContainer {
   width: 95%;
   max-width: 1116px;
   margin: 0 auto;
@@ -13,7 +13,7 @@
   gap: 25px;
 }
 @media only screen and (max-width: 991px) {
-  .container {
+  .myContainer {
     max-width: 546px;
     grid-template-columns: 1fr;
     padding-top: 140px;
