@@ -5,7 +5,7 @@ import styles from "./styles.module.css";
 
 const Home = () => {
   return (
-    <div className="">
+    <div className="container">
       {" "}
       <div className={styles.home}>
         <HistoryOfStacking />
