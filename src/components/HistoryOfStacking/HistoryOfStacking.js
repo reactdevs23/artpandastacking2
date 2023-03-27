@@ -20,6 +20,36 @@ const HistoryOfStacking = () => {
       amount: 214474,
       time: 1679927783475,
     },
+    {
+      operation: "stake",
+      amount: 214474,
+      time: 1679927783475,
+    },
+    {
+      operation: "Unstake",
+      amount: 214474,
+      time: 1679927783475,
+    },
+    {
+      operation: "Purchase",
+      amount: 214474,
+      time: 1679927783475,
+    },
+    {
+      operation: "stake",
+      amount: 214474,
+      time: 1679927783475,
+    },
+    {
+      operation: "Unstake",
+      amount: 214474,
+      time: 1679927783475,
+    },
+    {
+      operation: "Purchase",
+      amount: 214474,
+      time: 1679927783475,
+    },
     // {
     //   operation: "Referral - Bonus",
     //   amount: 214474,

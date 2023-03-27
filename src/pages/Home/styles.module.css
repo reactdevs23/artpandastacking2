@@ -1,5 +1,6 @@
 .wrapper {
   width: 100%;
+  zoom: -80%;
 }
 .home {
   display: grid;

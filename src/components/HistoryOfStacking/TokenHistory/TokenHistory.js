@@ -22,7 +22,7 @@ const TokenHistory = ({ history }) => {
           <p className={styles.title}>Amount</p>
         </div>
       </div>
-      <div className={styles.allHistories}>
+      <div className={[styles.allHistories, styles.grScrollbar].join(" ")}>
         {history.map((el, i) => (
           <div
             className={[
