@@ -1,24 +1,21 @@
 .container {
-  max-width: 1116px;
   width: 95%;
+  max-width: 1116px;
   margin: 0 auto;
+  min-height: 100vh;
+  padding: 150px 0;
+  padding-top: 200px;
 }
 .wrapper {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 25px;
-
-  min-height: 100vh;
-  padding: 150px 0;
-  padding-top: 200px;
 }
 @media only screen and (max-width: 991px) {
-  .wrapper {
+  .container {
     max-width: 546px;
     grid-template-columns: 1fr;
-  }
-  .wrapper {
     padding-top: 140px;
     padding-bottom: 80px;
   }
