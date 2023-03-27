@@ -27,23 +27,21 @@ const HistoryOfStacking = () => {
     // },
   ];
   return (
-    <div className={styles.wrapper}>
-      <div className={styles.historyOfStackingWrapper}>
-        <div className={styles.spaceBetween}>
-          <p className={styles.title}>History of staking</p>
-          <div className={styles.buttonContainer}>
-            <div className={styles.filterAndShort}>
-              {" "}
-              <img src={sort} alt="#" className={styles.icon} />{" "}
-              <span className={styles.text}>Filter & Sort</span>
-            </div>
-            <div className={styles.settings}>
-              <img src={setting} alt="#" className={styles.icon} />
-            </div>
+    <div className={styles.historyOfStackingWrapper}>
+      <div className={styles.spaceBetween}>
+        <p className={styles.title}>History of staking</p>
+        <div className={styles.buttonContainer}>
+          <div className={styles.filterAndShort}>
+            {" "}
+            <img src={sort} alt="#" className={styles.icon} />{" "}
+            <span className={styles.text}>Filter & Sort</span>
+          </div>
+          <div className={styles.settings}>
+            <img src={setting} alt="#" className={styles.icon} />
           </div>
         </div>
-        <TokenHistory history={history} />
       </div>
+      <TokenHistory history={history} />
     </div>
   );
 };
