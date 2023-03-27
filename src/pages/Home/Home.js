@@ -7,10 +7,7 @@ const Home = () => {
   return (
     <div className="container">
       {" "}
-      <div
-        className={styles.home}
-        style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "25px" }}
-      >
+      <div className={styles.home}>
         <HistoryOfStacking />
         <Staking />
       </div>
