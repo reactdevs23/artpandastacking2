@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { lock, unlock } from "../../images/images";
+import { activeUnlock, activeLock, lock, unlock } from "../../images/images";
 import Duration from "./Duration/Duration";
 import Rate from "./Rate/Rate";
 import StakeAmount from "./StakeAmount/StakeAmount";
@@ -52,7 +52,11 @@ const Staking = () => {
             onClick={() => setStake(true)}
           >
             <div className={styles.lockBox}>
-              <img src={lock} alt="#" className={styles.lockIcon} />
+              <img
+                src={stake ? activeLock : lock}
+                alt="#"
+                className={styles.lockIcon}
+              />
             </div>
             <p className={styles.heading}>Stake</p>
           </div>
@@ -61,7 +65,11 @@ const Staking = () => {
             onClick={() => setStake(false)}
           >
             <div className={styles.lockBox}>
-              <img src={unlock} alt="#" className={styles.lockIcon} />
+              <img
+                src={!stake ? activeUnlock : unlock}
+                alt="#"
+                className={styles.lockIcon}
+              />
             </div>
             <p className={styles.heading}>Unstack</p>
           </div>
