@@ -5,7 +5,7 @@
   width: 100%;
   min-height: 100vh;
   padding: 150px 0;
-  padding-top: 220px;
+  padding-top: 200px;
 }
 .stakeWrapper {
   display: flex;
@@ -95,7 +95,7 @@
 }
 @media only screen and (max-width: 991px) {
   .wrapper {
-    padding-top: 170px;
+    padding-top: 140px;
     padding-bottom: 80px;
   }
 }
