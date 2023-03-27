@@ -44,33 +44,31 @@ const Staking = () => {
     },
   ];
   return (
-    <div className={styles.wrapper}>
-      <div className={styles.stakeWrapper}>
-        <div className={styles.stakeUnstake}>
-          <div
-            className={[styles.stake, stake && styles.activeLock].join(" ")}
-            onClick={() => setStake(true)}
-          >
-            <div className={styles.lockBox}>
-              <img src={lock} alt="#" className={styles.lockIcon} />
-            </div>
-            <p className={styles.heading}>Stake</p>
+    <div className={styles.stakeWrapper}>
+      <div className={styles.stakeUnstake}>
+        <div
+          className={[styles.stake, stake && styles.activeLock].join(" ")}
+          onClick={() => setStake(true)}
+        >
+          <div className={styles.lockBox}>
+            <img src={lock} alt="#" className={styles.lockIcon} />
           </div>
-          <div
-            className={[styles.unStake, !stake && styles.activeLock].join(" ")}
-            onClick={() => setStake(false)}
-          >
-            <div className={styles.lockBox}>
-              <img src={unlock} alt="#" className={styles.lockIcon} />
-            </div>
-            <p className={styles.heading}>Unstack</p>
-          </div>
+          <p className={styles.heading}>Stake</p>
         </div>
-        <Duration duration={duration} />
-        <StakeAmount />
-        <Rate rate={rate} />
-        <button className={styles.button}>Stake</button>
+        <div
+          className={[styles.unStake, !stake && styles.activeLock].join(" ")}
+          onClick={() => setStake(false)}
+        >
+          <div className={styles.lockBox}>
+            <img src={unlock} alt="#" className={styles.lockIcon} />
+          </div>
+          <p className={styles.heading}>Unstack</p>
+        </div>
       </div>
+      <Duration duration={duration} />
+      <StakeAmount />
+      <Rate rate={rate} />
+      <button className={styles.button}>Stake</button>
     </div>
   );
 };
