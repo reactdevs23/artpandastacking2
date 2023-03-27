@@ -34,6 +34,11 @@ p {
 }
 .container {
   max-width: 1116px;
-  width: 98%;
+  width: 95%;
   margin: 0 auto;
+}
+@media only screen and (max-width: 380px) {
+  .container {
+    width: 98%;
+  }
 }
