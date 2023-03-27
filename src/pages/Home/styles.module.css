@@ -1,4 +1,4 @@
-.wrapper {
+.wrappers {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 25px;
@@ -7,17 +7,11 @@
   padding-top: 200px;
 }
 @media only screen and (max-width: 991px) {
-  .wrapper {
+  .wrappers {
     max-width: 546px;
     margin: 0 auto;
     grid-template-columns: 1fr;
     padding-top: 140px;
     padding-bottom: 80px;
-  }
-}
-
-@media only screen and (max-width: 380px) {
-  .container {
-    width: 98%;
   }
 }
