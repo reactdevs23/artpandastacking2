@@ -6,6 +6,7 @@ import StakeAmount from "./StakeAmount/StakeAmount";
 import styles from "./style.module.css";
 
 const Staking = () => {
+  const [stake, setStake] = useState(true);
   const duration = [
     {
       day: 30,
@@ -43,25 +44,33 @@ const Staking = () => {
     },
   ];
   return (
-    <div className={styles.stakeWrapper}>
-      <div className={styles.stakeUnstake}>
-        <div className={[styles.stake, styles.activeLock].join(" ")}>
-          <div className={styles.lockBox}>
-            <img src={lock} alt="#" className={styles.lockIcon} />
+    <div className={styles.wrapper}>
+      <div className={styles.stakeWrapper}>
+        <div className={styles.stakeUnstake}>
+          <div
+            className={[styles.stake, stake && styles.activeLock].join(" ")}
+            onClick={() => setStake(true)}
+          >
+            <div className={styles.lockBox}>
+              <img src={lock} alt="#" className={styles.lockIcon} />
+            </div>
+            <p className={styles.heading}>Stake</p>
           </div>
-          <p className={styles.heading}>Stake</p>
-        </div>
-        <div className={styles.unStake}>
-          <div className={styles.lockBox}>
-            <img src={unlock} alt="#" className={styles.lockIcon} />
+          <div
+            className={[styles.unStake, !stake && styles.activeLock].join(" ")}
+            onClick={() => setStake(false)}
+          >
+            <div className={styles.lockBox}>
+              <img src={unlock} alt="#" className={styles.lockIcon} />
+            </div>
+            <p className={styles.heading}>Unstack</p>
           </div>
-          <p className={styles.heading}>Unstack</p>
         </div>
+        <Duration duration={duration} />
+        <StakeAmount />
+        <Rate rate={rate} />
+        <button className={styles.button}>Stake</button>
       </div>
-      <Duration duration={duration} />
-      <StakeAmount />
-      <Rate rate={rate} />
-      <button className={styles.button}>Stake</button>
     </div>
   );
 };
