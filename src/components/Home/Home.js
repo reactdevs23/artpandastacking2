@@ -5,11 +5,13 @@ import styles from "./styles.module.css";
 
 const Home = () => {
   return (
-    <div className="container">
-      {" "}
-      <div className={styles.home}>
-        <HistoryOfStacking />
-        <Staking />
+    <div className={styles.wrapper}>
+      <div className="container">
+        {" "}
+        <div className={styles.home}>
+          <HistoryOfStacking />
+          <Staking />
+        </div>
       </div>
     </div>
   );
