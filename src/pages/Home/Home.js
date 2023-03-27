@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <div className="container">
       {" "}
-      <div className={styles.wrappers}>
+      <div className={styles.home}>
         <HistoryOfStacking />
         <Staking />
       </div>

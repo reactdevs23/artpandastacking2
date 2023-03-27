@@ -1,4 +1,4 @@
-.wrappers {
+.home {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 25px;
@@ -7,7 +7,7 @@
   padding-top: 200px;
 }
 @media only screen and (max-width: 991px) {
-  .wrappers {
+  .home {
     max-width: 546px;
     margin: 0 auto;
     grid-template-columns: 1fr;
