@@ -1,11 +1,11 @@
 import React from "react";
-import HistoryOfStacking from "../HistoryOfStacking/HistoryOfStacking";
-import Staking from "../Staking/Staking";
+import HistoryOfStacking from "../../components/HistoryOfStacking/HistoryOfStacking";
+import Staking from "../../components/Staking/Staking";
 import styles from "./Home.module.css";
 
 const Home = () => {
   return (
-    <div className={styles.myContainer}>
+    <div className="container">
       {" "}
       <div className={styles.wrapper}>
         <HistoryOfStacking />
