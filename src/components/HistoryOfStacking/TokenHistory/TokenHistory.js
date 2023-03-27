@@ -49,7 +49,7 @@ const TokenHistory = ({ history }) => {
             <div className={styles.history}>
               <p className={styles.text}>{el.operation}</p>{" "}
               <p className={styles.text}>{formatedDate(el.time)}</p>{" "}
-              <p className={styles.text}>{el.amount.toLocaleString()}</p>{" "}
+              <p className={styles.text}>{el.amount.toLocaleString()} UNS</p>{" "}
             </div>
           </div>
         ))}
