@@ -16,7 +16,7 @@
   justify-content: space-between;
   align-items: center;
   border-top: 1px dashed rgba(214, 237, 255, 0.08);
-  padding: 8px 0;
+  padding: 10px 0;
 }
 .rate {
   font-family: var(--fontFamily);
