@@ -5,7 +5,7 @@ import styles from "./home.module.css";
 
 const Home = () => {
   return (
-    <div>
+    <div className={styles.mainWrapper}>
       <div className="container">
         {" "}
         <div className={styles.home}>
