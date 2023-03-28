@@ -8,7 +8,7 @@ const Home = () => {
     <div className={style.mainWrapper}>
       <div className="container">
         {" "}
-        <div className={style.home}>
+        <div className={style.wrapper}>
           <HistoryOfStacking />
           <Staking />
         </div>

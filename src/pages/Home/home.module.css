@@ -1,4 +1,4 @@
-.home {
+.wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 25px;
@@ -10,7 +10,7 @@
   transform: scale(0.8);
 }
 @media only screen and (max-width: 991px) {
-  .home {
+  .wrapper {
     max-width: 546px;
     margin: 0 auto;
     grid-template-columns: 1fr;
